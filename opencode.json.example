@@ -1,0 +1,30 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "instructions": [
+    "始终使用中文回复。",
+    "规则/ - D&D 5E 规则书",
+    "角色卡/ - 角色数据",
+    "模组/ - 冒险模组",
+    "世界观/ - 战役设定",
+    "dice.py - 骰子程序"
+  ],
+  "autoupdate": true,
+  "provider": {
+    "deepseek": {
+      "options": {
+        "apiKey": "env:YOUR_DEEPSEEK_API_KEY",
+        "baseURL": "https://api.deepseek.com/v1"
+      }
+    }
+  },
+  "agent": {
+    "dm": {
+      "description": "D&D 5E 地下城主 - 像人类 DM 一样带团",
+      "mode": "primary",
+      "model": "deepseek/deepseek-chat",
+      "temperature": 0.7,
+      "color": "#FF5733"
+    }
+  },
+  "default_agent": "build"
+}
